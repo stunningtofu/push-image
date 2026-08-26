@@ -8,7 +8,6 @@ on:
 env:
   DOCKER_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
   DOCKER_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
-  # PERBAIKAN: Mengambil nama repositori saja agar formatnya tidak menjadi johanputra/johanputra/repo
   DOCKER_IMAGE_ID: ${{ github.event.repository.name }}
   IMAGE_TAG: ${{ github.sha }}
 
